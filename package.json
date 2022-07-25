@@ -1,0 +1,16 @@
+{
+  "name": "dsa-roadmap",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
