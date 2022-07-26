@@ -4,18 +4,18 @@
 
 ### **How Binary Search works**
 **We need to search the location of value 31 using binary search**
+
 ![alt text](https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_0.jpg "Array from Tutorials point images")
 
 * Declare these variables ```low=Array[0], high=Array[lastItem]```
 
-* Get the half of the array using this formula 
- ```mid = floor(low + (high - low) / 2)```
+* Get the half of the array using this formula ```mid = floor(low + (high - low) / 2)```
 ![alt text](
 <https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_1.jpg>)
 
 * Is the value at mid equals the needed value  ```mid === 31 ?``` **No**
 
-* Is the value at mid is greate than the needed value ```mid > 31 ? ``` **No** 
+* Is the value at mid is greate than the needed value ```mid > 31 ?``` **No**
 
 * Is the value at mid is less than the needed value ```mid <``` **Yes** , So the value we are searching for is in the upper portion of the array. set low   ```low = mid + 1``` and reset the mid with equation in step 2 ```mid = floor(low + (high - low)/2)```
 ![alt text](
