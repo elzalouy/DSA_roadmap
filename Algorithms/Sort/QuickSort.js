@@ -58,10 +58,9 @@ function partitionFunc(left, right, pivot) {
       A[rightPointer] = temp;
     }
   }
-  // let temp = A[leftPointer];
-  // A[leftPointer] = A[right];
-  // A[right] = temp;
-  // console.log(A);
+  let temp = A[leftPointer];
+  A[leftPointer] = A[right];
+  A[right] = temp;
   return leftPointer;
 }
 
@@ -88,7 +87,6 @@ function quickSort(left, right) {
   if (right - left <= 0) return;
   else {
     let pivot = A[right];
-    console.log("pivot", pivot, A, right);
     let partition = partitionFunc(left, right, pivot);
     quickSort(left, partition - 1);
     quickSort(partition + 1, right);
