@@ -1,4 +1,4 @@
-export default function BinarySearch(A = [], value) {
+module.exports = function BinarySearch(A = [], value) {
   let low = 0,
     high = A.length;
   let index = null;
@@ -10,4 +10,4 @@ export default function BinarySearch(A = [], value) {
     if (A[mid] < value) low = mid + 1;
   }
   return index;
-}
+};

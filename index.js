@@ -1,14 +1,39 @@
-import BinarySearch from "./Algorithms/Search/BinarySearch/BinarySearh.js";
-import QuickSort from "./Algorithms/Sort/QuickSort.js";
-export default function app() {
-  console.log("Quick Sort for ", [2, 1, 5, 6, 24, 3]);
-  let sortedArray = QuickSort([2, 1, 5, 6, 24, 3]);
-  console.log("Quick Sort result", sortedArray);
-  let index = BinarySearch(sortedArray, 5);
-  console.log(
-    sortedArray,
-    "find index of 5 after quick sort using Binary search",
-    index
-  );
+const QuickSort = require("./Algorithms/Sort/QuickSort/QuickSort.js");
+const BinarySearch = require("./Algorithms/Search/BinarySearch/BinarySearh.js");
+const Stack = require("./Data Structure/DS 1/1_Stack.js");
+
+const stack = () => {
+  let stack = new Stack(5);
+  // check is empty
+  // push
+  stack.push(2);
+  console.log("push 2", stack);
+  stack.push(3);
+  console.log("push 3", stack);
+  stack.push(4);
+  console.log("push 4", stack);
+  stack.push(5);
+  console.log("push 5", stack);
+  stack.push(6);
+  console.log("push 6", stack);
+  // check is full
+  console.log("check is full", stack.isFull());
+  // pop
+  stack.pop();
+  console.log("pop 6", stack);
+  stack.pop();
+  console.log("pop 5", stack);
+  stack.pop();
+  console.log("pop 4", stack);
+  stack.pop();
+  console.log("pop 3", stack);
+  stack.pop();
+  console.log("pop 2", stack);
+  //check is empty
+  console.log("check is empty", stack.isEmpty());
+};
+
+function app() {
+  stack();
 }
 app();

@@ -94,8 +94,8 @@ function quickSort(left, right) {
 }
 // end procedure
 // sort function
-export default function sort(array) {
+module.exports = function sort(array) {
   A = array;
   quickSort(0, A.length - 1);
   return A;
-}
+};
