@@ -2,7 +2,7 @@
 
 #### With arrays items should hold a memory that fit the array size and if you are out of space you need to move to a new spot in memory every time.
 
-![alt text]( "Grokking algorithms book, ch2")
+![alt text](https://raw.githubusercontent.com/elzalouy/DSA_roadmap/main/assets/Screenshot%20from%202022-10-30%2009-54-02.png "Grokking algorithms book, ch2")
 
 #### With linked lists, your items can be anywhere in memory. Each item stores the address of the next item. A bunch of random memory addresses are linked together.
 
